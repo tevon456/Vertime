@@ -1,0 +1,81 @@
+:root {
+    /* COLOURS */
+    --white: #fff;
+    --flash-white: #f7f7f7;
+    --light-grey: #d4d4d4;
+    --grey: #999999;
+    --black: hsl(0, 0%, 12%);
+    --red: hsl(356, 95%, 51%);
+    --green: #0bb45f;
+    --blue: hsl(217, 82%, 47%);
+    --yellow: #e7af06;
+    --orange: hsl(17, 75%, 51%);
+
+    /* SHADES VAR #C51350; */
+    --lightest: 2.4;
+    --lighter: 1.6;
+    --light: 1.4;
+    --normal: 35%;
+    --dark: 0.5%;
+    --darker: 1.5%;
+
+    --primary-color: var(--flash-white, ##f7f7f7);
+    --primary-color-2: var(--white, #fff);
+    --secondary-color: var(--black, #111111);
+
+    /* Accent shades */
+    /* --accent-color: #c51350; */
+
+    --accent-hue: 178;
+    --accent-saturation: 46%;
+    --accent-color-lighter: hsl(
+        var(--accent-hue),
+        var(--accent-saturation),
+        calc(35% * var(--lighter))
+    );
+    --accent-color-light: hsl(
+        var(--accent-hue),
+        var(--accent-saturation),
+        calc(35% * var(--light))
+    );
+    --accent-color: hsl(var(--accent-hue), var(--accent-saturation), 42%);
+    --accent-color-dark: hsl(
+        var(--accent-hue),
+        var(--accent-saturation),
+        calc(35% - var(--dark))
+    );
+    --accent-color-darker: hsl(
+        var(--accent-hue),
+        var(--accent-saturation),
+        calc(35% - var(--darker))
+    );
+
+    /* Buttons */
+    --btn-primary-bg: var(--accent-color-light);
+    --btn-primary-hover: var(--accent-color-lighter);
+    --btn-primary-active: var(--accent-color-darker);
+
+    --btn-secondary-bg: var(--black);
+    --btn-secondary-hover: hsl(0, 0%, calc(12% * var(--lightest)));
+    --btn-secondary-active: hsl(0, 0%, calc(12% - var(--darker)));
+
+    --btn-danger-bg: var(--red);
+    --btn-danger-hover: hsl(356, 95%, calc(51% * var(--light)));
+    --btn-danger-active: hsl(356, 95%, calc(51% - var(--darker)));
+
+    --btn-blue-bg: var(--blue);
+    --btn-blue-hover: hsl(217, 82%, calc(47% * var(--light)));
+    --btn-blue-active: hsl(217, 82%, calc(47% - var(--dark)));
+}
+
+.accent {
+    color: var(--accent-color);
+}
+.black {
+    color: var(--secondary-color);
+}
+
+.active {
+    color: var(--accent-color-light) !important;
+    font-weight: bold;
+}

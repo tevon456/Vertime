@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{536:function(e,a,t){"use strict";t.r(a);var n=t(22),c=t(0),r=t.n(c),d=t(65);a.default=function(e){return r.a.createElement(n.b,{padding:!0},r.a.createElement(Head,{title:"New password"}),r.a.createElement("div",{className:"grid-center margin-top--md"},r.a.createElement(d.k,{match:e.match})))}}}]);
