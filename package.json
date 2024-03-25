@@ -24,7 +24,7 @@
         "resolve-url-loader": "^2.3.1"
     },
     "dependencies": {
-        "formik": "^1.5.8",
+        "formik": "^2.4.5",
         "idb-keyval": "^3.2.0",
         "moment": "^2.29.4",
         "react-helmet": "^5.2.1",
